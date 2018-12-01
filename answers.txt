@@ -1,0 +1,7 @@
+PFSE, 1
+PFSE, 0
+PFSA, 9
+PFSA, 8
+TFSA, 1
+CFSE, 0
+PFTE, 0

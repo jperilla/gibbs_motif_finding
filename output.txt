@@ -1,3 +1,0 @@
-score = 22.0
-GAAG-GCA
-GCAGAGCA
