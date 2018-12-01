@@ -26,32 +26,32 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="R" value="1" />
-          <entry key="md" value="3" />
-          <entry key="py" value="4" />
-          <entry key="txt" value="13" />
+          <entry key="md" value="4" />
+          <entry key="py" value="5" />
+          <entry key="txt" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Markdown" value="3" />
-          <entry key="PLAIN_TEXT" value="13" />
-          <entry key="Python" value="4" />
+          <entry key="Markdown" value="4" />
+          <entry key="PLAIN_TEXT" value="15" />
+          <entry key="Python" value="5" />
           <entry key="R" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="1" />
-          <entry key="md" value="871" />
-          <entry key="py" value="4174" />
+          <entry key="md" value="1054" />
+          <entry key="py" value="5292" />
           <entry key="txt" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="871" />
+          <entry key="Markdown" value="1054" />
           <entry key="PLAIN_TEXT" value="53" />
-          <entry key="Python" value="4174" />
+          <entry key="Python" value="5292" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -60,28 +60,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gibbs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+            <state relative-caret-position="67">
+              <caret line="27" column="67" selection-start-line="27" selection-start-column="67" selection-end-line="27" selection-end-column="67" />
               <folding>
                 <element signature="e#658#668#0" expanded="true" />
-                <marker date="1543696575748" expanded="true" signature="1090:1294" ph="..." />
-                <marker date="1543696575748" expanded="true" signature="1330:1331" ph="..." />
+                <marker date="1543701562801" expanded="true" signature="1516:1519" ph="..." />
+                <marker date="1543701562801" expanded="true" signature="1555:1556" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="165">
-                <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-              </first_editor>
-              <second_editor />
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="13" lean-forward="true" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -107,6 +104,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>length</find>
+      <find>score</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -118,8 +116,8 @@
         <option value="$PROJECT_DIR$/gibb.py" />
         <option value="$PROJECT_DIR$/localAlignment.py" />
         <option value="$PROJECT_DIR$/answers.txt" />
-        <option value="$PROJECT_DIR$/gibbs.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/gibbs.py" />
       </list>
     </option>
   </component>
@@ -131,7 +129,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1226" />
+    <option name="width" value="1244" />
     <option name="height" value="723" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -185,10 +183,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1226" height="723" extended-state="0" />
+    <frame x="0" y="23" width="1244" height="723" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19763513" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19467553" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -202,7 +200,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3771791" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3771791" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -258,25 +256,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gibbs.py">
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding>
-            <element signature="e#658#668#0" expanded="true" />
-            <marker date="1543696575748" expanded="true" signature="1090:1294" ph="..." />
-            <marker date="1543696575748" expanded="true" signature="1330:1331" ph="..." />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="1" column="13" lean-forward="true" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="165">
-            <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <first_editor relative-caret-position="204">
+            <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.7/site-packages/numpy/core/defchararray.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="1834" selection-start-line="1834" selection-end-line="1834" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gibbs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="27" column="67" selection-start-line="27" selection-start-column="67" selection-end-line="27" selection-end-column="67" />
+          <folding>
+            <element signature="e#658#668#0" expanded="true" />
+            <marker date="1543701562801" expanded="true" signature="1516:1519" ph="..." />
+            <marker date="1543701562801" expanded="true" signature="1555:1556" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -7,8 +7,13 @@ the gibb's sampling method to locate the most likely motifs.
 
 ### Installation
 
+Run the commands below to clone the repository and install package dependencies.
+
 ```
-git clone 
+git clone https://github.com/jperilla/gibbs_motif_finding.git
+cd gibbs_motif_finding
+pip install -r requirements.txt
+
 ```
 ### Running
 ####`gibbs.py`

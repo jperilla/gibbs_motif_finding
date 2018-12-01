@@ -15,6 +15,7 @@ import sys
 import argparse
 import random
 import pandas as pd
+import numpy as np
 
 amino_acids = ['A', 'R', 'N', 'D', 'C', 'Q', 'E', 'G', 'H', 'I',
                'L', 'K', 'M', 'F', 'P', 'S', 'T', 'W', 'Y', 'V']
@@ -22,64 +23,57 @@ amino_acids = ['A', 'R', 'N', 'D', 'C', 'Q', 'E', 'G', 'H', 'I',
 bases = ['A', 'G', 'C', 'T']
 
 
-def score(s, seq):
-    pass
-
-
 def create_profile(sequences, is_protein):
+    # Put sequences into a matrix
+    sequence_matrix = np.char.asarray([list(x) for x in sequences])
+    sequence_length = len(sequences[0])
 
-    # Put sequences into a dataframe
-    sequence_df = pd.DataFrame(sequences)
-    print(sequence_df)
-
-    profile_df = pd.DataFrame()
     if is_protein:
         profile_df = pd.DataFrame(columns=amino_acids)
     else:
         profile_df = pd.DataFrame(columns=bases)
 
     for letter in list(profile_df.columns.values):
-        continue
+        for i in range(0, np.size(sequence_matrix, 0)):
+            col = sequence_matrix[:, i]
+            profile_df.at[i, letter] = list(col).count(letter) / sequence_length
+
+    return profile_df
+
+
+def get_score(lmer, profile):
+    return 0
+
 
 def gibbs(l, sequences, is_protein):
     """ This function perform's gibbs sampling method for motif finding """
     # Randomly select start positions
     start_positions = [random.randint(0, len(x)-l) for x in sequences]
     print('Trying start positions ' + str(start_positions))
-    profile = []
-    best_score = 0
 
     # Randomly choose one of the t sequences
     t = len(sequences)
-    r = random.randint(0, t-1)
-    random_sequence = sequences[r]
-    print("Random sequence at position " + str(r) + " = " + random_sequence)
+    chosen_sequence_index = random.randint(0, t-1)
+    random_sequence = sequences[chosen_sequence_index]
+    print("Random sequence at position " + str(chosen_sequence_index) + " = " + random_sequence)
 
     # Create a profile for rest of sequences
-    profile = create_profile([seq for index, seq in enumerate(sequences) if index != r])
-    print(profile)
+    profile = create_profile([seq for index, seq in enumerate(sequences) if index != chosen_sequence_index], is_protein)
 
-    """ while i != last:  # repeat until nothing changes
-        last = list(i)
-
-        # iterate through every string
-        for i in xrange(len(Seqs)):
-        # compute the profile for the sequences except i
-        P = profile_for([
-            x[j: j + k] for q, (x, j) in enumerate(zip(Seqs, I))
-            if q != i
-        ])
-        # find the place the profile matches best
-        best = None
-        for j in xrange(len(Seqs[i]) - k + 1):
-            score = profile_score(P, Seqs[i][j: j + k])
-        if score > best or best is None:
+    # Calculate probabilities at each position in chosen sequence
+    best = 0
+    best_start = start_positions[chosen_sequence_index]
+    for pos in range(0, len(random_sequence)-l):
+        score = get_score(random_sequence[pos:pos+l], profile)
+        if score > best:
             best = score
-        bestpos = j
-        # update the ith position with the best
-        I[i] = bestpos
+            best_start = pos
 
-    return I, [x[j: j + k] for x, j in zip(Seqs, I)]"""
+    # Update the new starting position
+    start_positions[chosen_sequence_index] = best_start
+
+    print(start_positions)
+
     motifs = [1, 0, 9, 8, 1, 0, 0]
     return motifs
 
@@ -110,7 +104,7 @@ def main():
             seq = seq.upper()
 
         # Perform Gibb's Sampling
-        motifs = gibbs(motif_length, sequences)
+        motifs = gibbs(motif_length, sequences, is_protein)
 
         # Output result
         output = open("motif_output.txt", "w+")
