@@ -1865,6 +1865,7 @@
       <w>as_tibble</w>
       <w>as_utf8</w>
       <w>ascentDetails</w>
+      <w>asctime</w>
       <w>asin</w>
       <w>asinh</w>
       <w>askYesNo</w>
@@ -4100,6 +4101,7 @@
       <w>lmeControl</w>
       <w>lmeStruct</w>
       <w>lmer</w>
+      <w>lmers</w>
       <w>lmrob</w>
       <w>lmrob..D..fit</w>
       <w>lmrob..M..fit</w>

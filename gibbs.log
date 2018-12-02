@@ -1,0 +1,80 @@
+2018-12-02 16:11:23,152 STARTING NEW MOTIF SEARCH
+2018-12-02 16:11:23,152 Search for motif of length 4 in sequences found in file input_dna.txt
+2018-12-02 16:11:23,152 DNA Sequences
+2018-12-02 16:11:23,152 Step 1. Randomly choose starting positions
+2018-12-02 16:11:23,152 Trying start positions [6, 11, 14, 8, 13]
+2018-12-02 16:11:23,152  - Consensus Score = 9
+2018-12-02 16:11:23,153 Step 2. Random sequence at position 4 = TACTTAACACCCTGTCAA
+2018-12-02 16:11:23,153 Step 3. Profile creation from t-1 sequences and random start positions
+2018-12-02 16:11:23,153  - Sequences = ['GTAAACAATATTTATAGC', 'AAAATTTACCTTAGAAGG', 'CCGTACTGTCAAGCGTGG', 'TGAGTAAACGACGTCCCA']
+2018-12-02 16:11:23,153  - Starting positions = [6, 11, 14, 8]
+2018-12-02 16:11:23,153  - Profile matrix = 
+2018-12-02 16:11:23,153 [['A' 'A' 'T' 'A']
+ ['T' 'A' 'G' 'A']
+ ['G' 'T' 'G' 'G']
+ ['C' 'G' 'A' 'C']]
+2018-12-02 16:11:23,161  - Profile = 
+2018-12-02 16:11:23,161       A     G     C     T
+0  0.25  0.25  0.25  0.25
+1   0.5  0.25     0  0.25
+2  0.25   0.5     0  0.25
+3   0.5  0.25  0.25     0
+2018-12-02 16:11:23,168 Step 4. Find probabilities of all positions of chosen sequence to find the best
+2018-12-02 16:11:23,168  -- lmer = CTTA
+2018-12-02 16:11:23,168  -- score = 0.0078125
+2018-12-02 16:11:23,168  -- lmer = TTAA
+2018-12-02 16:11:23,168  -- score = 0.0078125
+2018-12-02 16:11:23,168  -- lmer = TAAC
+2018-12-02 16:11:23,168  -- score = 0.0078125
+2018-12-02 16:11:23,169  -- lmer = TGTC
+2018-12-02 16:11:23,169  -- score = 0.00390625
+2018-12-02 16:11:23,169 [(0.0078125, 2), (0.0078125, 3), (0.0078125, 4), (0.00390625, 12)]
+2018-12-02 16:11:23,169  - Current start position = 13
+2018-12-02 16:11:23,169 Min prob = 0.00390625
+2018-12-02 16:11:23,169 [(2.0, 2), (2.0, 3), (2.0, 4), (1.0, 12)]
+2018-12-02 16:11:23,169 Total prob = 7.0
+2018-12-02 16:11:23,169 [(0.2857142857142857, 2), (0.2857142857142857, 3), (0.2857142857142857, 4), (0.14285714285714285, 12)]
+2018-12-02 16:11:23,169  - New best start position = 2
+2018-12-02 16:11:23,169  - Consensus Score = 9
+2018-12-02 16:11:23,169 Optimal starting positions
+2018-12-02 16:11:23,170 [6, 11, 14, 8, 2]
+2018-12-02 16:12:20,233 STARTING NEW MOTIF SEARCH
+2018-12-02 16:12:20,233 Search for motif of length 6 in sequences found in file input_dna.txt
+2018-12-02 16:12:20,234 DNA Sequences
+2018-12-02 16:12:20,234 Step 1. Randomly choose starting positions
+2018-12-02 16:12:20,234 Trying start positions [6, 3, 0, 12, 2]
+2018-12-02 16:12:20,234  - Consensus Score = 16
+2018-12-02 16:12:20,234 Step 2. Random sequence at position 1 = AAAATTTACCTTAGAAGG
+2018-12-02 16:12:20,234 Step 3. Profile creation from t-1 sequences and random start positions
+2018-12-02 16:12:20,234  - Sequences = ['GTAAACAATATTTATAGC', 'CCGTACTGTCAAGCGTGG', 'TGAGTAAACGACGTCCCA', 'TACTTAACACCCTGTCAA']
+2018-12-02 16:12:20,234  - Starting positions = [6, 0, 12, 2]
+2018-12-02 16:12:20,234  - Profile matrix = 
+2018-12-02 16:12:20,235 [['A' 'A' 'T' 'A' 'T' 'T']
+ ['C' 'C' 'G' 'T' 'A' 'C']
+ ['G' 'T' 'C' 'C' 'C' 'A']
+ ['C' 'T' 'T' 'A' 'A' 'C']]
+2018-12-02 16:12:20,245  - Profile = 
+2018-12-02 16:12:20,245       A     G     C     T
+0  0.25  0.25   0.5     0
+1  0.25     0  0.25   0.5
+2     0  0.25  0.25   0.5
+3   0.5     0  0.25  0.25
+4   0.5     0  0.25  0.25
+5  0.25     0   0.5  0.25
+2018-12-02 16:12:20,253 Step 4. Find probabilities of all positions of chosen sequence to find the best
+2018-12-02 16:12:20,253  -- lmer = AATTTA
+2018-12-02 16:12:20,253  -- score = 0.00048828125
+2018-12-02 16:12:20,254  -- lmer = ATTTAC
+2018-12-02 16:12:20,254  -- score = 0.00390625
+2018-12-02 16:12:20,254  -- lmer = ACCTTA
+2018-12-02 16:12:20,254  -- score = 0.000244140625
+2018-12-02 16:12:20,254 [(0.00048828125, 2), (0.00390625, 3), (0.000244140625, 7)]
+2018-12-02 16:12:20,254  - Current start position = 3
+2018-12-02 16:12:20,254 Min prob = 0.000244140625
+2018-12-02 16:12:20,254 [(2.0, 2), (16.0, 3), (1.0, 7)]
+2018-12-02 16:12:20,254 Total prob = 19.0
+2018-12-02 16:12:20,254 [(0.10526315789473684, 2), (0.8421052631578947, 3), (0.05263157894736842, 7)]
+2018-12-02 16:12:20,255  - New best start position = 3
+2018-12-02 16:12:20,255  - Consensus Score = 16
+2018-12-02 16:12:20,255 Optimal starting positions
+2018-12-02 16:12:20,255 [6, 3, 0, 12, 2]
