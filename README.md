@@ -19,7 +19,8 @@ pip install -r requirements.txt
 ### Running
 ####`gibbs.py`
 Run gibbs.py to locate sequences of length l in a set of sequences in your input file.
-This code requires python 3 to run.
+This code requires python 3 to run. Files can be in fasta format or text files with sequences
+separated by newline.
 
 To run from teh command line:
 
@@ -29,7 +30,7 @@ python gibbs.py -l 6 -f inputfile.txt
  
 `-l`: defines the l-mer, or size of teh motif you are searching for   
 
-`-f`: required parameter that gives the filename of the input file of the sequences to be searched
+`-f`: required parameter that gives the filename (can be a txt or fasta) of the input file of the sequences to be searched
 
 `-p`: set to True if these are protein sequences, otherwise DNA sequences, default is False
 
@@ -46,3 +47,10 @@ This program uses the Gibb's sampling method to find the optimal starting positi
 5. Create a profile matrix 4 x l (or 20 x l) with probabilities of each letter AGCT (or amino acids) at each position
 6. Take the random matrix you chose in step 3 and find the best probability based on the profile and set that starting position to the new starting position
 7. Repeat from step 3 until the list of starting positions does not change
+
+---
+
+## Logging
+
+The logs directory file gibbs.log is appended at each time the program is run.
+This file contains details at each step of the algorithm.

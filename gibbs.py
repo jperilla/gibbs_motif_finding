@@ -11,7 +11,6 @@ Algorithm steps
 7. Repeat from step 3 until the list of starting positions does not change
 
 """
-import sys
 import argparse
 import random
 import pandas as pd
@@ -21,7 +20,7 @@ import logging
 amino_acids = ['A', 'R', 'N', 'D', 'C', 'Q', 'E', 'G', 'H', 'I',
                'L', 'K', 'M', 'F', 'P', 'S', 'T', 'W', 'Y', 'V']
 bases = ['A', 'G', 'C', 'T']
-logging.basicConfig(filename='gibbs.log', level=logging.DEBUG, format='%(asctime)s %(message)s')
+logging.basicConfig(filename='./logs/gibbs.log', level=logging.DEBUG, format='%(asctime)s %(message)s')
 
 
 def calculate_consensus_score(sequences, s, l, is_protein):
@@ -64,16 +63,17 @@ def create_profile(sequences, s, l, is_protein):
     # Initialize profile based on type of sequences
     if is_protein:
         profile_df = pd.DataFrame(columns=amino_acids)
-        num_letters = len(amino_acids)
     else:
         profile_df = pd.DataFrame(columns=bases)
-        num_letters = len(bases)
+
+    num_sequences = len(sequences)
 
     # Create profile matrix
     for i in range(0, np.size(lmer_matrix, 1)):
         for letter in list(profile_df.columns.values):
             letter_count = list(lmer_matrix[:, i]).count(letter)
-            profile_df.at[i, letter] = letter_count / num_letters
+            logging.info(letter_count)
+            profile_df.at[i, letter] = letter_count / num_sequences
 
     logging.info(" - Profile = ")
     logging.info(profile_df)
@@ -99,7 +99,7 @@ def gibbs(l, sequences, is_protein):
     start_positions = [random.randint(0, len(x)-l) for x in sequences]
     logging.info('Trying start positions ' + str(start_positions))
 
-    # Repeat these steps until nothing changes in the list
+    # Repeat these steps until we cannot import the score
     consensus_score = calculate_consensus_score(sequences, start_positions, l, is_protein)
     last_score = 0
     while consensus_score > last_score:
@@ -125,8 +125,8 @@ def gibbs(l, sequences, is_protein):
             score = get_best_probability(random_sequence[pos:pos+l], profile)
             if score > 0:
                 prob_distribution.append((score, pos))
-                logging.info(" -- lmer = " + random_sequence[pos:pos+l])
-                logging.info(" -- score = " + str(score))
+                #(" -- lmer = " + random_sequence[pos:pos+l])
+                #logging.info(" -- score = " + str(score))
 
         logging.info(prob_distribution)
 
@@ -161,6 +161,12 @@ def gibbs(l, sequences, is_protein):
     return start_positions
 
 
+def import_from_fasta(file):
+    from Bio import SeqIO
+    fasta_sequences = SeqIO.parse(file, 'fasta')
+    return [fasta_seq.seq.tostring() for fasta_seq in fasta_sequences]
+
+
 def main():
     args = parse_arguments()
     filename = args.f
@@ -178,13 +184,14 @@ def main():
             logging.info('DNA Sequences')
 
         # Read sequences into array
-        sequences = [line.strip() for line in file]
-
-        # Do validation if necessary
+        if filename.endswith('fasta'):
+            sequences = import_from_fasta(file)
+        else:
+            sequences = [line.strip() for line in file]
 
         # Make sure the sequences are all upper case
-        for seq in sequences:
-            seq = seq.upper()
+        sequences = [seq.upper() for seq in sequences]
+        print(sequences)
 
         # Perform Gibb's Sampling
         motifs = gibbs(motif_length, sequences, is_protein)

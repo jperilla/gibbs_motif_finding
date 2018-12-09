@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb27f2fb-db6f-4d9b-a1a6-aa69562cf48f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/input_dna.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hm01g.fasta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/julie.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/julie.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gibbs_motif_finding.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gibbs_motif_finding.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gibbs.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gibbs.py" beforeDir="false" afterPath="$PROJECT_DIR$/gibbs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_sequences.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input_protien.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/motif_output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/motif_output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/motif_output.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,43 +20,47 @@
     <session id="2019528805">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="R" value="1" />
-          <entry key="log" value="4" />
-          <entry key="md" value="5" />
-          <entry key="py" value="5" />
-          <entry key="txt" value="19" />
+          <entry key="fasta" value="1" />
+          <entry key="log" value="12" />
+          <entry key="md" value="9" />
+          <entry key="py" value="6" />
+          <entry key="txt" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Markdown" value="5" />
-          <entry key="PLAIN_TEXT" value="23" />
-          <entry key="Python" value="5" />
+          <entry key="Markdown" value="9" />
+          <entry key="PLAIN_TEXT" value="39" />
+          <entry key="Python" value="6" />
           <entry key="R" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="1" />
-          <entry key="md" value="1202" />
-          <entry key="py" value="9261" />
-          <entry key="txt" value="52" />
+          <entry key="log" value="1" />
+          <entry key="md" value="1555" />
+          <entry key="py" value="9713" />
+          <entry key="txt" value="53" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="1202" />
-          <entry key="PLAIN_TEXT" value="53" />
-          <entry key="Python" value="9261" />
+          <entry key="Markdown" value="1555" />
+          <entry key="PLAIN_TEXT" value="55" />
+          <entry key="Python" value="9713" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -66,25 +68,21 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gibbs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="691">
-              <caret line="155" column="98" lean-forward="true" selection-start-line="155" selection-start-column="98" selection-end-line="155" selection-end-column="98" />
+            <state relative-caret-position="-920">
+              <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
               <folding>
-                <element signature="e#748#758#0" expanded="true" />
-                <marker date="1543785048636" expanded="true" signature="1161:2038" ph="..." />
-                <marker date="1543785048636" expanded="true" signature="3397:3400" ph="..." />
-                <marker date="1543785048636" expanded="true" signature="3436:3437" ph="..." />
+                <element signature="e#748#763#0" expanded="true" />
+                <marker date="1544376591674" expanded="true" signature="1157:2034" ph="..." />
+                <marker date="1544376591674" expanded="true" signature="3398:3401" ph="..." />
+                <marker date="1544376591674" expanded="true" signature="3437:3438" ph="..." />
+                <marker date="1544376591674" expanded="true" signature="6748:6897" ph="..." />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gibbs.log">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -104,6 +102,12 @@
       <find>#print</find>
       <find>print</find>
       <find>create_profil</find>
+      <find>profile matrix =</find>
+      <find>.log</find>
+      <find>num_letters</find>
+      <find>profile matri</find>
+      <find>consensus</find>
+      <find>logging.info</find>
     </findStrings>
     <replaceStrings>
       <replace>logging.info</replace>
@@ -118,10 +122,12 @@
         <option value="$PROJECT_DIR$/gibb.py" />
         <option value="$PROJECT_DIR$/localAlignment.py" />
         <option value="$PROJECT_DIR$/answers.txt" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/input_dna.txt" />
-        <option value="$PROJECT_DIR$/gibbs.py" />
         <option value="$PROJECT_DIR$/gibbs.log" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/logs/gibbs.log" />
+        <option value="$PROJECT_DIR$/motif_output.txt" />
+        <option value="$PROJECT_DIR$/gibbs.py" />
       </list>
     </option>
   </component>
@@ -150,6 +156,11 @@
               <item name="gibbs_motif_finding" type="b2602c69:ProjectViewProjectNode" />
               <item name="gibbs_motif_finding" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="gibbs_motif_finding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gibbs_motif_finding" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -160,6 +171,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/logs" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -190,11 +209,11 @@
     <frame x="0" y="23" width="1244" height="723" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19467553" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20133111" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3296355" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -204,7 +223,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.22979398" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.40253565" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -229,16 +248,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/localAlignment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="79" column="29" selection-start-line="79" selection-start-column="29" selection-end-line="80" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/output.txt" />
+    <entry file="file://$PROJECT_DIR$/localAlignment.py" />
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -267,16 +278,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="210">
-            <caret line="39" column="83" selection-start-line="39" selection-start-column="83" selection-end-line="39" selection-end-column="83" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/input_dna.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -284,28 +285,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hm01g.fasta">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/motif_output1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="133">
+            <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/motif_output.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="255">
+          <caret line="17" column="59" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/gibbs.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="23141" column="36" selection-start-line="23141" selection-start-column="27" selection-end-line="23141" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gibbs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="691">
-          <caret line="155" column="98" lean-forward="true" selection-start-line="155" selection-start-column="98" selection-end-line="155" selection-end-column="98" />
+        <state relative-caret-position="-920">
+          <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
           <folding>
-            <element signature="e#748#758#0" expanded="true" />
-            <marker date="1543785048636" expanded="true" signature="1161:2038" ph="..." />
-            <marker date="1543785048636" expanded="true" signature="3397:3400" ph="..." />
-            <marker date="1543785048636" expanded="true" signature="3436:3437" ph="..." />
+            <element signature="e#748#763#0" expanded="true" />
+            <marker date="1544376591674" expanded="true" signature="1157:2034" ph="..." />
+            <marker date="1544376591674" expanded="true" signature="3398:3401" ph="..." />
+            <marker date="1544376591674" expanded="true" signature="3437:3438" ph="..." />
+            <marker date="1544376591674" expanded="true" signature="6748:6897" ph="..." />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gibbs.log">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
