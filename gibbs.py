@@ -11,6 +11,7 @@ Algorithm steps
 7. Repeat from step 3 until the list of starting positions does not change
 
 """
+import time
 import argparse
 import random
 import pandas as pd
@@ -125,8 +126,6 @@ def gibbs(l, sequences, is_protein):
             score = get_best_probability(random_sequence[pos:pos+l], profile)
             if score > 0:
                 prob_distribution.append((score, pos))
-                #(" -- lmer = " + random_sequence[pos:pos+l])
-                #logging.info(" -- score = " + str(score))
 
         logging.info(prob_distribution)
 
@@ -155,6 +154,9 @@ def gibbs(l, sequences, is_protein):
             # Calculate a new consensus score
             consensus_score = calculate_consensus_score(sequences, start_positions, l, is_protein)
 
+    print("Consensus Score = " + str(consensus_score))
+    print("Optimal starting positions")
+    print(start_positions)
     logging.info("Optimal starting positions")
     logging.info(start_positions)
 
@@ -164,7 +166,7 @@ def gibbs(l, sequences, is_protein):
 def import_from_fasta(file):
     from Bio import SeqIO
     fasta_sequences = SeqIO.parse(file, 'fasta')
-    return [fasta_seq.seq.tostring() for fasta_seq in fasta_sequences]
+    return [str(fasta_seq.seq) for fasta_seq in fasta_sequences]
 
 
 def main():
@@ -191,7 +193,8 @@ def main():
 
         # Make sure the sequences are all upper case
         sequences = [seq.upper() for seq in sequences]
-        print(sequences)
+        print("Number of sequences = " + str(len(sequences)))
+        logging.info("Number of sequences = " + str(len(sequences)))
 
         # Perform Gibb's Sampling
         motifs = gibbs(motif_length, sequences, is_protein)
@@ -223,4 +226,10 @@ def parse_arguments():
 
 
 if __name__ == "__main__":
+    start_time = time.time()
     main()
+    elapsed_time = time.time() - start_time
+    msg = "Running time = " + str(elapsed_time * 1000) + "ms"
+    logging.info(msg)
+    print(msg)
+
